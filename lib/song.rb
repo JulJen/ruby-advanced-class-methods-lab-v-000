@@ -48,8 +48,8 @@ class Song
     new_artist = name[0]
     new_song = name[1].gsub(".mp3", "")
     song = self.new
-    song.artist_name = new_artist
-    song.name = new_song
+    song.artist_name = new_artist.save
+    song.name = new_song.save
 
     song
   end
@@ -57,7 +57,7 @@ class Song
   def self.create_from_filename(file_name)
 # # binding.pry
 #     song = self.new
-    self.new_from_filename(file_name).save
+    self.new_from_filename(file_name)
   end
 
 
