@@ -54,10 +54,10 @@ class Song
     song
   end
 
-  def self.create_from_filename(name)
+  def self.create_from_filename(file_name)
 binding.pry
     song = self.new
-    song.new_from_filename(name)
+    new_from_filename(name)
   end
 
 
