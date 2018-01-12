@@ -45,6 +45,11 @@ class Song
 
   def self.new_from_filename(name)
     name = name.split(" - ")
+
+    @all.map.with_index do | k, v|
+
+
+    # name = name.split(" - ")
     new_artist = name[0]
     new_song = name[1].gsub(".mp3", "")
     song = self.new
@@ -61,5 +66,5 @@ class Song
   def self.destroy_all
     self.all.clear
   end
-  
+
 end
