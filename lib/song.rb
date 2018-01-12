@@ -58,7 +58,7 @@ class Song
 binding.pry
     song = self.new
     song.new_from_filename(name)
-  end 
+  end
 
 
 end
