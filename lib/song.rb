@@ -46,7 +46,7 @@ class Song
   def self.new_from_filename(name)
     name = name.split(" - ")
 
-    @all.map.with_index do | k, v|
+    # @all.map.with_index do | k, v|
 
 
     # name = name.split(" - ")
