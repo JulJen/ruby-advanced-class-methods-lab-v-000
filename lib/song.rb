@@ -49,7 +49,8 @@ class Song
     new_song = name[1].gsub(".mp3", "")
 
     song = self.new
-    song.name = new_song && song.artist_name = new_artist
+    song.name = new_song
+    song.artist_name = new_artist
     song
   end
 
